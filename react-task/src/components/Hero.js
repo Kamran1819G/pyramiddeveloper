@@ -3,6 +3,8 @@ import BuyHedgePay from "../assets/images/BuyHedgePay.png";
 import Share from "../assets/images/Share.png";
 import PresentationChart from "../assets/images/PresentationChart.png";
 import BuyWithTransak from "../assets/images/Up and Down Arrow.png";
+import InterChange from "../assets/images/InterChange.png";
+import QuestionMark from "../assets/images/Question.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
@@ -149,6 +151,15 @@ const Hero = () => {
                 Doge Coin
               </option>
             </select>
+            <div className="flex justify-between">
+              <img src={InterChange} alt="Interchange" className="h-8" />
+              <div className="flex items-center">
+                <span className="text-slate-300 text-xs">
+                  Better by +76.7750%
+                </span>
+                <img src={QuestionMark} alt="Question Mark" className="h-8" />
+              </div>
+            </div>
             <select className="bg-black text-white font-bold w-full p-4 my-3 rounded-lg">
               <option
                 value="BTC"
@@ -201,7 +212,7 @@ const Hero = () => {
                 checked={agreed}
                 onChange={handleAgreementChange}
               />
-              <label>
+              <label className="text-slate-300">
                 I have read and agree with HedgePay Terms of Service. I have
                 done my research to make sure I am legally able to purchase the
                 token in my country of residence.

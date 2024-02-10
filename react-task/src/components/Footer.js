@@ -1,5 +1,8 @@
 import React from "react";
 import CERTIK from "../assets/CERTIK.png";
+import CoinMarketCap from "../assets/images/CoinMarket.png";
+import Social from "../assets/images/Social.png";
+import Support from "../assets/images/Support.png";
 
 const Footer = () => {
   return (
@@ -14,25 +17,35 @@ const Footer = () => {
             >
               <img src={CERTIK} className="h-14" alt="CERTIK Logo" />
             </a>
-            <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
-              <li>
-                <a href="#" className="hover:underline me-4 md:me-6">
-                  About
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:underline me-4 md:me-6">
-                  Privacy Policy
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:underline me-4 md:me-6">
-                  Licensing
-                </a>
-              </li>
-              <li>
+            <ul className="flex flex-wrap items-center justify-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+              <li className="flex flex-col items-center mx-3">
                 <a href="#" className="hover:underline">
-                  Contact
+                  <div className="flex flex-col items-center">
+                    <img
+                      src={CoinMarketCap}
+                      alt="CoinMarketCap"
+                      className="h-8"
+                    />
+                    <span className="text-xs text-gray-500 mt-1">
+                      CoinMarketCap
+                    </span>
+                  </div>
+                </a>
+              </li>
+              <li className="flex flex-col items-center mx-3">
+                <a href="#" className="hover:underline">
+                  <div className="flex flex-col items-center">
+                    <img src={Social} alt="Social" className="h-8" />
+                    <span className="text-xs text-gray-500 mt-1">Social</span>
+                  </div>
+                </a>
+              </li>
+              <li className="flex flex-col items-center mx-3">
+                <a href="#" className="hover:underline">
+                  <div className="flex flex-col items-center">
+                    <img src={Support} alt="Support" className="h-8" />
+                    <span className="text-xs text-gray-500  mt-1">Support</span>
+                  </div>
                 </a>
               </li>
             </ul>
